@@ -10,7 +10,7 @@ RUN pip install --no-cache-dir uv
 COPY . /app
 
 RUN uv sync --no-dev
-RUN uv pip install --system kagglehub
+RUN uv pip install --no-cache-dir kagglehub
 
 EXPOSE 5172
 
